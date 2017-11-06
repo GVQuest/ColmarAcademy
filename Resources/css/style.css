@@ -1,0 +1,181 @@
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+div, body {
+  display: block;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+a {
+  color: #292929;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+
+/*Header - Top Line*/
+nav span {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+header nav {
+  display: block;
+  float: right;
+  margin-right: .5rem;
+}
+
+.top-line {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  z-index: 10;
+  height: 4rem;
+  align-items: center;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.top-line .flex-container {
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+}
+
+.top-line img {
+  margin-left: 1.5rem;
+  height: 4rem;
+}
+
+#colmar {
+  color: #292929;
+  font-weight: bold;
+}
+
+#academy {
+  color: #8A8A8A;
+}
+
+/*Jumbotron*/
+.jumbotron, .start-learning {
+  /*background-color: #BAB9BA;*/
+  background-color: #F3F3F3;
+}
+
+.jumbotron img, .info img, .thesis-exhibit video {
+  width: 60%;
+  height: 100%;
+}
+
+.jumbotron .flex-container {
+  align-items: center;
+}
+
+.start-btn {
+  width: 30%;
+  align-items: center;
+}
+
+.btn {
+  background-color: #292929;
+  display: flex;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: .5rem 0;
+  margin: auto;
+  justify-content: center;
+}
+
+.btn a {
+  color: #F3F3F3;
+}
+
+
+/*2nd Section (info)*/
+.info .flex-container {
+  flex-direction: column;
+}
+
+.content {
+  width: 60%;
+}
+
+section img, .content {
+  margin: 2rem 1.5rem;
+}
+
+
+/*3rd Section (start-learning)*/
+
+.start-learning .flex-container {
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+section .topic img {
+  margin: 0;
+  paddding: 0;
+}
+
+.topics {
+  display: flex;
+  width: 100%;
+  margin: 0 2.5rem;
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 2rem;
+}
+
+
+/*4th Section (thesis-exhibit)*/
+
+section video {
+  margin: 2rem 1.5rem 0 1.5rem;
+}
+
+
+/*5th Section (reimagine-urban)*/
+#reimagine-urban .content {
+  margin: 1.5rem 0 2rem 1.5rem;
+}
+
+
+/*Footer - Bottom Line*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jumbotron, .info, .start-learning, .thesis-exhibit, .start-btn, .btn, .content, .topic {
+  border: solid black 1px;
+}
