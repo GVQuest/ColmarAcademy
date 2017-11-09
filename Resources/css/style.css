@@ -46,6 +46,7 @@ header nav {
   display: flex;
   background-color: white;
   width: 100%;
+  position: fixed;
   z-index: 10;
   height: 4rem;
   align-items: center;
@@ -79,17 +80,31 @@ header nav {
   background-color: #F3F3F3;
 }
 
-.jumbotron img, .info img, .thesis-exhibit video {
+
+.jumbotron .banner {
+  flex-direction: column;
   width: 60%;
-  height: 100%;
 }
 
-.jumbotron .flex-container {
+.banner {
+}
+
+.banner img {
+  margin: 6rem 1.5rem 2rem 1.5rem;
+}
+
+.jumbotron .start-btn-container {
+  width: 40%;
+  height: auto;
   align-items: center;
 }
 
+.jumbotron .flex-container {
+}
+
+
 .start-btn {
-  width: 30%;
+  width: 75%;
   align-items: center;
 }
 
@@ -109,25 +124,50 @@ header nav {
 
 
 /*2nd Section (info)*/
-.info .flex-container {
-  flex-direction: column;
-}
 
-.content {
+.info .info-left {
+  flex-direction: column;
+  height: 100%;
   width: 60%;
 }
 
-section img, .content {
+
+
+.info-left img, .content {
   margin: 2rem 1.5rem;
+}
+
+.info .info-right, .thesis-exhibit .info-right{
+  display: block;
+  width: 40%;
+}
+
+
+.right img {
+  margin: 1rem;
+  width: 35%;
+}
+
+.right {
+  display: flex;
+}
+
+.right .right-content {
+  width: 65%;
+}
+
+#read {
+  color: blue;
 }
 
 
 /*3rd Section (start-learning)*/
 
-.start-learning .flex-container {
+.start-learning .flex-container h1 {
   width: 100%;
-  justify-content: center;
+  text-align: center;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 section .topic img {
@@ -139,20 +179,33 @@ section .topic img {
   display: flex;
   width: 100%;
   margin: 0 2.5rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .topic {
   display: flex;
   flex-direction: column;
   width: 30%;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 
 /*4th Section (thesis-exhibit)*/
 
-section video {
+.thesis-exhibit .info-left {
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+
+.info-left video {
   margin: 2rem 1.5rem 0 1.5rem;
+}
+
+.thesis-exhibit .info-right {
+
 }
 
 
