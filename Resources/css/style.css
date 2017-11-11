@@ -14,11 +14,14 @@ a {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: #252525;
+  font-weight: 900;
 }
 
 h2 {
   font-size: 1.75rem;
+  color: #292929;
 }
 
 h3 {
@@ -27,18 +30,19 @@ h3 {
 
 .flex-container {
   display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
 
 /*Header - Top Line*/
-nav span {
-  display: inline-block;
+nav a {
   padding-right: 1rem;
 }
 
 header nav {
-  display: block;
-  float: right;
+  display: flex;
+  align-self: center;
   margin-right: .5rem;
 }
 
@@ -50,13 +54,14 @@ header nav {
   z-index: 10;
   height: 4rem;
   align-items: center;
+  justify-content: space-between;
   line-height: 2rem;
   font-size: 1.5rem;
 }
 
-.top-line .flex-container {
+.top-line .logo {
+  display: flex;
   align-items: center;
-  position: relative;
   flex-grow: 1;
 }
 
@@ -76,21 +81,18 @@ header nav {
 
 /*Jumbotron*/
 .jumbotron, .start-learning {
-  /*background-color: #BAB9BA;*/
-  background-color: #F3F3F3;
+  background-color: #BAB9BA;
+  /*background-color: #F3F3F3;*/
 }
 
-
-.jumbotron .banner {
-  flex-direction: column;
+.info-left {
   width: 60%;
+  padding: 2rem 1.5rem;
 }
 
-.banner {
-}
-
-.banner img {
-  margin: 6rem 1.5rem 2rem 1.5rem;
+.jumbotron .info-left img {
+  margin-top: 4rem;
+  width: 100%
 }
 
 .jumbotron .start-btn-container {
@@ -98,10 +100,6 @@ header nav {
   height: auto;
   align-items: center;
 }
-
-.jumbotron .flex-container {
-}
-
 
 .start-btn {
   width: 75%;
@@ -125,31 +123,21 @@ header nav {
 
 /*2nd Section (info)*/
 
-.info .info-left {
+
+.info .info-left img {
+  width: 100%
+}
+
+.info-right{
+  display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 60%;
-}
-
-
-
-.info-left img, .content {
-  margin: 2rem 1.5rem;
-}
-
-.info .info-right, .thesis-exhibit .info-right{
-  display: block;
   width: 40%;
+  padding-top: 1rem;
 }
 
-
-.right img {
+.info-right img {
   margin: 1rem;
   width: 35%;
-}
-
-.right {
-  display: flex;
 }
 
 .right .right-content {
@@ -163,7 +151,7 @@ header nav {
 
 /*3rd Section (start-learning)*/
 
-.start-learning .flex-container h1 {
+.start-learning h1{
   width: 100%;
   text-align: center;
   margin-top: 2rem;
@@ -189,23 +177,20 @@ section .topic img {
   flex-direction: column;
   width: 30%;
   margin: 1rem;
+  background-color: white;
 }
 
 
 /*4th Section (thesis-exhibit)*/
-
-.thesis-exhibit .info-left {
-  flex-direction: column;
-  width: 60%;
-  height: 100%;
+.thesis-exhibit h1{
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .info-left video {
-  margin: 2rem 1.5rem 0 1.5rem;
-}
-
-.thesis-exhibit .info-right {
-
+  margin-bottom: : 2rem;
+  width: 100%;
 }
 
 
