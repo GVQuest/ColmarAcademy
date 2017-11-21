@@ -43,12 +43,16 @@ h3 {
 nav a {
   margin-right: 1rem;
   padding: 2px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid white;
 }
 
 nav a:hover {
   border-radius: 5px;
   background-color: #BAB9BA;
-  transition: background 750ms ease;
+  border: 1px solid red;
+  transition: background,border 750ms ease;
 }
 
 nav {
@@ -144,10 +148,8 @@ nav {
 }
 
 .btn a:hover {
-
-  color: #70A7FF;
-  background-color: #2B4670;
-  transition: background 500ms ease-in-out, color 500ms ease-in-out;
+  background-color: #760000;
+  transition: background 500ms ease-in-out, color 300ms ease-in-out;
 }
 
 
@@ -289,7 +291,42 @@ footer p {
   font-size: 1rem;
 }
 
+.social {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem auto;
+}
 
+.social i {
+  padding: .5rem;
+  margin-left: .25rem;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.social i.fa-facebook-square:hover {
+  border-radius: 5px;
+  background-color: #3b5998;
+  border: 1px solid #BAB9BA;
+  transition: background,border 550ms ease;
+}
+
+.social i.fa-twitter-square:hover {
+  border-radius: 5px;
+  background-color: #0084FF;
+  border: 1px solid #BAB9BA;
+  transition: background,border 550ms ease;
+}
+
+.social i.fa-youtube-square:hover {
+  border-radius: 5px;
+  background-color: #FF0000;
+  border: 1px solid #BAB9BA;
+  transition: background,border 550ms ease;
+}
 
 @media only screen and (max-width: 1520px) {
   .start-btn {
@@ -441,8 +478,6 @@ footer p {
     margin: 1rem auto;
     border-top: none;
   }
-
-
 
   footer p {
     margin: auto;
